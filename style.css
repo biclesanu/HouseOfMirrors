@@ -1,0 +1,133 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto; 
+    height: 100%;
+    width: 100%;
+}
+
+.long-container{
+    width: 100vw;
+    height: 600vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bottom-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6vh; 
+  padding-top: 10vh;
+  height: auto; 
+  background-image: url("scrollimage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("concentriccircles.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.left-panel-frame {
+    width: 30.2vw;  
+    height: 100vh;  
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.left-panel-color {
+    width: 30.2vw;  
+    height: 100vh;  
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #65082F;
+}
+
+.text-frame {
+    width: 27.1vw;  
+    height: 52.1vh;     
+    left: 3.1vw;        
+    top: 37.6vh;        
+    position: absolute;
+    opacity: 0;
+}
+
+.text-container {
+    width: 24.5vw;
+    height: 52.7vh;
+    left: -2.6vw;  
+    top: -1.3vh;   
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    overflow: hidden;
+}
+
+.description {
+    width: 21.0vw; 
+    height: 32.5vh;
+    left: 2.7vw;   
+    top: 20.4vh;   
+    position: absolute;
+    color: white;
+    font-size: 2.8vh; 
+    font-family: K2D;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.title {
+    width: 21.9vw;      
+    height: 48.5vh;  
+    left: 2.6vw;      
+    top: 1.3vh;        
+    position: absolute;
+    color: white;
+    font-size: 7.4vh;   
+    font-family: Kablammo;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.picture-box {
+  position: relative;
+  width: 79.86vw;
+  height: 63.43vh;
+  background: rgba(58, 0, 24, 0.08);
+  overflow: hidden;
+  margin-bottom: 6vh;
+}
+
+.mirror-title {
+  position: absolute;
+  color: white;
+  font-size: 5.2vw;
+  font-family: Kablammo;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+
+.caption {
+  position: absolute;
+  color: white;
+  font-size: 2.1vw;
+  font-family: K2D;
+  font-weight: 400;
+  word-wrap: break-word;
+}
