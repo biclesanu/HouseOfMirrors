@@ -4,16 +4,25 @@ html, body {
     overflow: auto; 
     height: 100%;
     width: 100%;
+    scrollbar-width: none;     
+    -ms-overflow-style: none;  
 }
 
-.long-container{
+.body {
+  overflow: auto;            
+  scrollbar-width: none;      
+  -ms-overflow-style: none;   
+}
+
+.long-container {
     width: 100vw;
-    height: 600vh;
+    min-height: 100vh; 
     position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 .bottom-container {
     width: 100vw;
@@ -106,35 +115,47 @@ html, body {
 }
 
 .text-wrapper {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-}
-
-.content-box {
-  display: flex;
-  flex-direction: row; 
-  align-items: flex-start;
-  gap: 2vw; 
-}
-
-.content-box > .mirror-title, 
-.content-box > .caption {
-  color: white;
-  font-family: K2D, Kablammo;
+  flex: 1;
+  justify-content: center;  /* vertically center content */
+  padding-top: 0;           /* remove top padding */
+  padding-bottom: 0;
+  box-sizing: border-box;
 }
 
 .picture-box {
-  position: relative;
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;      
+  box-sizing: border-box;  
+  overflow: hidden;
+}
+
+.picture-box img {
+  width: 100%;       
+  height: 100%;       
+  object-fit: contain; 
+  display: block;      
+}
+
+.content-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   padding: 2vh 2vw;
   width: 60vw;
-  height: 63vh;
+  height: 65vh;
   background: rgba(58, 0, 24, 0.08);
   overflow: hidden;
-  margin-bottom: 4vh auto;
+  margin-top: 5rem;
 }
 
 .mirror-title {
@@ -153,4 +174,16 @@ html, body {
   font-weight: 400;
   word-wrap: break-word;
   position: static;
+}
+
+.contact-me-box {
+  width: 100%;
+  background: #65082F;
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Center child elements horizontally */
+  justify-content: center; /* Center vertically if needed */
+  gap: 3vh;
+  box-sizing: border-box;
 }
