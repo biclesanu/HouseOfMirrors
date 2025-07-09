@@ -16,17 +16,18 @@ html, body {
 }
 
 .bottom-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6vh; 
-  padding-top: 10vh;
-  height: auto; 
-  background-image: url("scrollimage.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    gap: 6vh;                
+    background-image: url("scrollimage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5vh 0;          
 }
 
 
@@ -42,7 +43,7 @@ html, body {
 
 
 .left-panel-frame {
-    width: 30.2vw;  
+    width: 30vw;  
     height: 100vh;  
     left: 0;
     top: 0;
@@ -51,7 +52,7 @@ html, body {
 }
 
 .left-panel-color {
-    width: 30.2vw;  
+    width: 30vw;  
     height: 100vh;  
     left: 0;
     top: 0;
@@ -60,17 +61,17 @@ html, body {
 }
 
 .text-frame {
-    width: 27.1vw;  
-    height: 52.1vh;     
-    left: 3.1vw;        
-    top: 37.6vh;        
+    width: 27vw;  
+    height: 52vh;     
+    left: 3vw;        
+    top: 37vh;        
     position: absolute;
     opacity: 0;
 }
 
 .text-container {
-    width: 24.5vw;
-    height: 52.7vh;
+    width: 24vw;
+    height: 52vh;
     left: -2.6vw;  
     top: -1.3vh;   
     position: absolute;
@@ -104,30 +105,52 @@ html, body {
     word-wrap: break-word;
 }
 
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start;
+  gap: 2vw; 
+}
+
+.content-box > .mirror-title, 
+.content-box > .caption {
+  color: white;
+  font-family: K2D, Kablammo;
+}
+
 .picture-box {
   position: relative;
-  width: 79.86vw;
-  height: 63.43vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 2vw;
+  width: 60vw;
+  height: 63vh;
   background: rgba(58, 0, 24, 0.08);
   overflow: hidden;
-  margin-bottom: 6vh;
+  margin-bottom: 4vh auto;
 }
 
 .mirror-title {
-  position: absolute;
   color: white;
-  font-size: 5.2vw;
+  font-size: 5vw;
   font-family: Kablammo;
   font-weight: 400;
   word-wrap: break-word;
+  position: static;
 }
 
-
 .caption {
-  position: absolute;
   color: white;
-  font-size: 2.1vw;
+  font-size: 1.8vw;
   font-family: K2D;
   font-weight: 400;
   word-wrap: break-word;
+  position: static;
 }
