@@ -111,7 +111,7 @@ html, body {
     top: 1.3vh;        
     position: absolute;
     color: white;
-    font-size: 7.4vh;   
+    font-size: 5vh;   
     font-family: Kablammo;
     font-weight: 400;
     word-wrap: break-word;
@@ -172,7 +172,7 @@ html, body {
 
 .caption {
   color: white;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
   font-family: K2D;
   font-weight: 400;
   word-wrap: break-word;
